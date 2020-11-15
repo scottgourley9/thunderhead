@@ -12,7 +12,7 @@ const Home = () => {
         <section className={styles['home-wrapper']}>
             <div className={styles['main-title']}>
                 <LazyLoad offset={100} once>
-                    <img src="/thundercloud.png" alt="thunder head Logo" className={styles['thunder-cloud-title']} />
+                    <img src="/thundercloud.webp" alt="thunder head Logo" className={styles['thunder-cloud-title']} />
                 </LazyLoad>
                 <h1 className={styles['main-title-text']}>HOME SERVICE LEAD GENERATION &amp; MARKETING PROS</h1>
                 <div className={styles['button-section']}>
@@ -25,7 +25,7 @@ const Home = () => {
             <article className={styles.articles}>
                 <h2>DO YOU NEED LEADS?</h2>
                 <LazyLoad offset={100} once>
-                    <img src="/leads.jpg" alt="leads" className={styles['inline-image']} />
+                    <img src="/leads.webp" alt="leads" className={styles['inline-image']} />
                 </LazyLoad>
                 <h3>Acquire and Interact Automatically</h3>
                 <h4>Text Message Leads</h4>
@@ -40,7 +40,7 @@ const Home = () => {
             <article className={styles.articles}>
                 <h2>Search Engine Optimization</h2>
                 <LazyLoad offset={100} once>
-                    <img src="/seo.jpg" alt="seo" className={styles['inline-image']} />
+                    <img src="/seo.webp" alt="seo" className={styles['inline-image']} />
                 </LazyLoad>
                 <h3>Be Seen, Be Heard, Be Found</h3>
                 <div className={styles['be-card']}>
@@ -108,7 +108,7 @@ const Home = () => {
             <article className={styles.articles}>
                 <h2>Web Design</h2>
                 <LazyLoad offset={100} once>
-                    <img src="/webDesign.jpg" alt="web design" className={styles['inline-image']} />
+                    <img src="/webDesign.webp" alt="web design" className={styles['inline-image']} />
                 </LazyLoad>
                 <strong>If you’re serious about your business, you’re going to need a seriously good website.</strong>
                 <div className={styles['be-card']}>
@@ -144,7 +144,7 @@ const Home = () => {
             <article className={styles.articles} id="textMarketingSoftware">
                 <h2>Automated Customer Interaction Software</h2>
                 <LazyLoad offset={100} once>
-                    <img src="/insight.jpg" alt="insight" className={styles['inline-image']} />
+                    <img src="/insight.webp" alt="insight" className={styles['inline-image']} />
                 </LazyLoad>
                 <h3>Automatically understand your client’s experience</h3>
                 <ul>
@@ -158,7 +158,7 @@ const Home = () => {
                 </div>
                 <h3>Automatically run text campaigns</h3>
                 <LazyLoad offset={100} once>
-                    <img src="/texting.jpg" alt="feedback" className={styles['inline-image']} />
+                    <img src="/texting.webp" alt="feedback" className={styles['inline-image']} />
                 </LazyLoad>
                 <ul>
                     <li><strong>Make Your Marketing Automatic:</strong> Automatically provide information to client’s about promotions</li>
@@ -174,7 +174,7 @@ const Home = () => {
                 <br />
                 All on Autopilot.</h3>
                 <LazyLoad offset={100} once>
-                    <img src="/growth.jpg" alt="feedback" className={styles['inline-image']} />
+                    <img src="/growth.webp" alt="feedback" className={styles['inline-image']} />
                 </LazyLoad>
                 <p><strong>What Can Thunderhead Do for you?</strong></p>
                 <p>Automatically collect feedback from your clients about their experience. Get a ton of positive reviews on multiple platforms. Create Loyal customers who come back again and again!</p>
