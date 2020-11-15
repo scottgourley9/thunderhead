@@ -23,8 +23,6 @@ const Nav = () => {
             toggleMenu(!showing);
         }
     }
-    // const slideInClass = () => `${animate['animate__animated']} ${showing ? `${styles['slide-in']} ${animate['animate__fadeInLeft']}` : `${styles['slide-out']} ${animate['animate__fadeOutLeft']}`}`.trim();
-    const slideInClass = () => '';
 
     return (
         <Fragment>
@@ -38,54 +36,54 @@ const Nav = () => {
                     <GiHamburgerMenu className={styles['ham-menu']} onClick={handleToggleMenu} />
                 </div>
                 <ul className={`${styles['nav-list-wrapper']} ${showing ? styles.showing : ''} ${notAtTop ? styles['nav-show-shadow'] : ''}`.trim()}>
-                    <li onClick={handleToggleMenu} className={slideInClass()}>
+                    <li onClick={handleToggleMenu}>
                         <Link href="/">
                             <a>HOME</a>
                         </Link>
                     </li>
-                    <li onClick={handleToggleMenu} className={`${styles['nav-services']} ${slideInClass()}`}>
+                    <li onClick={handleToggleMenu} className={styles['nav-services']}>
                         <Link href="/">
                             <a>SERVICES</a>
                         </Link>
                         <ul className={styles['sub-nav']}>
-                        	<li onClick={handleToggleMenu} className={slideInClass()}>
+                        	<li onClick={handleToggleMenu}>
                                 <Link href="/#leads">
                                     <a>Leads</a>
                                 </Link>
                             </li>
-                            <li onClick={handleToggleMenu} className={slideInClass()}>
+                            <li onClick={handleToggleMenu}>
                                 <Link href="/#seo">
                                     <a>SEO</a>
                                 </Link>
                             </li>
-                            <li onClick={handleToggleMenu} className={slideInClass()}>
+                            <li onClick={handleToggleMenu}>
                                 <Link href="/#webDesign">
                                     <a>Web Design</a>
                                 </Link>
                             </li>
-                            <li onClick={handleToggleMenu} className={slideInClass()}>
+                            <li onClick={handleToggleMenu}>
                                 <Link href="/#textMarketingSoftware">
                                     <a>Text Marketing Software</a>
                                 </Link>
                             </li>
                        </ul>
                     </li>
-                    <li onClick={handleToggleMenu} className={slideInClass()}>
+                    <li onClick={handleToggleMenu}>
                         <Link href="/pricing">
                             <a>PRICING</a>
                         </Link>
                     </li>
-                    <li onClick={handleToggleMenu} className={slideInClass()}>
+                    <li onClick={handleToggleMenu}>
                         <Link href="/blog">
                             <a>BLOG</a>
                         </Link>
                     </li>
-                    <li onClick={handleToggleMenu} className={slideInClass()}>
+                    <li onClick={handleToggleMenu}>
                         <Link href="/contact">
                             <a>CONTACT US</a>
                         </Link>
                     </li>
-                    <li onClick={handleToggleMenu} className={slideInClass()}>
+                    <li onClick={handleToggleMenu}>
                         <Link href="/contact">
                             <a>SCHEDULE A DEMO</a>
                         </Link>

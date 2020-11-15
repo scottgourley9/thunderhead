@@ -24,13 +24,6 @@ const Footer = () => {
                 <li><a href="#" target="_blank" rel="noopener noreferrer"><FaLinkedin className={styles.icon} /></a></li>
             </ul>
             <p className={styles.copyright}>© Copyright <span id="year">2020</span>, Thunderhead. All Rights Reserved.</p>
-            <h5>Images By:</h5>
-            <a className={styles['image-by']} href='https://www.freepik.com/vectors/technology'>Technology vector created by pch.vector - www.freepik.com</a>
-            <a className={styles['image-by']} href='https://www.freepik.com/vectors/abstract'>Abstract vector created by pch.vector - www.freepik.com</a>
-            <a className={styles['image-by']} href='https://www.freepik.com/vectors/people'>People vector created by pch.vector - www.freepik.com</a>
-            <a className={styles['image-by']} href='https://www.freepik.com/vectors/infographic'>Infographic vector created by pch.vector - www.freepik.com</a>
-            <a className={styles['image-by']} href='https://www.freepik.com/vectors/people'>People vector created by pch.vector - www.freepik.com</a>
-            <a className={styles['image-by']} href='https://www.freepik.com/vectors/business'>Business vector created by pch.vector - www.freepik.com</a>
     	</footer>
     )
 }
