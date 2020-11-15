@@ -11,9 +11,11 @@ const Home = () => {
     return (
         <section className={styles['home-wrapper']}>
             <div className={styles['main-title']}>
-                <LazyLoad offset={100} once>
-                    <img src="/thundercloud.webp" alt="thunder head Logo" className={styles['thunder-cloud-title']} />
-                </LazyLoad>
+                <div className={styles['cloud-container']}>
+                    <LazyLoad offset={100} once>
+                        <img src="/thundercloud.webp" alt="thunder head Logo" className={styles['thunder-cloud-title']} />
+                    </LazyLoad>
+                </div>
                 <h1 className={styles['main-title-text']}>HOME SERVICE LEAD GENERATION &amp; MARKETING PROS</h1>
                 <div className={styles['button-section']}>
                     <Link href="/contact">

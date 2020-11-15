@@ -48,10 +48,14 @@
     text-align: center;
     margin-bottom: $space-md;
 }
-.thunder-cloud-title {
+.cloud-container {
     width: 130px;
+    height: 110px;
     margin-bottom: $space-sm;
     margin-top: $space-sm;
+}
+.thunder-cloud-title {
+    width: 100%;
 }
 .button-section {
     width: 100%;
