@@ -32,7 +32,7 @@ const Nav = () => {
             <nav className={styles['nav-wrapper']}>
                 <div className={`${styles['logo-and-ham']} ${notAtTop ? styles['show-shadow'] : ''}`.trim()}>
                     <Link href="/">
-                        <img src="/thundercloud.webp" alt="thunder head Logo" className={styles['thunder-cloud']} />
+                        <img src="/thundercloud.png" alt="thunder head Logo" className={styles['thunder-cloud']} />
                     </Link>
                     <span className={styles['logo-title']}>THUNDERHEAD</span>
                     <GiHamburgerMenu className={styles['ham-menu']} onClick={handleToggleMenu} />
