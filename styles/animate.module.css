@@ -1907,10 +1907,8 @@
 }
 
 .animate__fadeInLeft {
-    @media (max-width: 980px) {
-        -webkit-animation-name: fadeInLeft;
-        animation-name: fadeInLeft
-    }
+    -webkit-animation-name: fadeInLeft;
+    animation-name: fadeInLeft
 }
 
 @-webkit-keyframes fadeInLeftBig {
@@ -2318,10 +2316,8 @@
 }
 
 .animate__fadeOutLeft {
-    @media (max-width: 980px) {
-        -webkit-animation-name: fadeOutLeft;
-        animation-name: fadeOutLeft
-    }
+    -webkit-animation-name: fadeOutLeft;
+    animation-name: fadeOutLeft
 }
 
 @-webkit-keyframes fadeOutLeftBig {
