@@ -1,0 +1,24 @@
+@import '../../../styles/variables';
+
+.details-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+}
+.details-section {
+    display: flex;
+    align-items: center;
+}
+.icon {
+    font-size: 35px;
+    color: $blue;
+    margin-right: $space-sm;
+}
+.details {
+    margin-bottom: $space-sm;
+    a {
+        color: $blue;
+        text-decoration: underline;
+    }
+}

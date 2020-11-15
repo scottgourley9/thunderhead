@@ -1,0 +1,87 @@
+@import '../../styles/variables';
+
+.home-wrapper {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    ul {
+        padding-inline-start: $space-xxlg;
+    }
+    li {
+        margin-bottom: $space-xs;
+        &::before {
+            content: "\2022";
+            color: $blue;
+            font-weight: bold;
+            display: inline-block;
+            width: 24px;
+            margin-left: -24px;
+            font-size: 40px;
+            vertical-align: bottom;
+        }
+    }
+
+}
+.home-wrapper * {
+    line-height: $line-height;
+}
+.articles {
+    width: 100%;
+}
+.main-title {
+    width: calc(100% + 32px);
+    margin: 0 -16px;
+    height: 430px;
+    background-image: url('../../public/whiteBackground.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.main-title-text {
+    font-size: 30px;
+    line-height: $line-height;
+    text-align: center;
+    margin-bottom: $space-md;
+}
+.thunder-cloud-title {
+    width: 130px;
+    margin-bottom: $space-sm;
+    margin-top: $space-sm;
+}
+.button-section {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: $space-md 0;
+}
+.inline-image {
+    width: calc(100% + 32px);
+    margin: 0 -16px;
+}
+.be-icon {
+    color: $blue;
+    font-size: 130px;
+}
+.be-icon-section {
+    display: flex;
+    align-items: center;
+    span {
+        margin-left: $space-sm;
+        font-size: 30px;
+        color: $blue;
+        font-weight: bold;
+    }
+}
+.be-card {
+    background: $white;
+    border-radius: 15px;
+    box-shadow: -$space-xs $space-xs $space-xs $grey-border;
+    border: 1px solid $grey-border;
+    padding: $space-sm;
+    margin: $space-md 0;
+}

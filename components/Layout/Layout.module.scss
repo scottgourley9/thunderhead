@@ -1,0 +1,9 @@
+@import '../../styles/variables';
+
+.layout {
+    margin-top: $space-xxlg;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: $space-sm $space-sm $space-lg;
+}

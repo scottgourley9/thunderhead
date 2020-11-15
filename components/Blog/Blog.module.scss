@@ -1,0 +1,13 @@
+@import '../../styles/variables';
+
+.blog-wrapper {
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    a {
+        color: $blue;
+        text-decoration: underline; 
+    }
+}

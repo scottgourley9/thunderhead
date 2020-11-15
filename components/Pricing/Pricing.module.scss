@@ -1,0 +1,15 @@
+@import '../../styles/variables';
+
+.pricing-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    @media (max-width: $small-device) {
+        flex-direction: column;
+    }
+    h1 {
+        text-align: center;
+        margin: $space-sm 0 $space-lg 0;
+    }
+}
