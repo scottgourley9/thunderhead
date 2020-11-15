@@ -11,7 +11,9 @@ const Home = () => {
     return (
         <section className={styles['home-wrapper']}>
             <div className={styles['main-title']}>
-                <img src="/thundercloud.png" alt="thunder head Logo" className={styles['thunder-cloud-title']} />
+                <LazyLoad offset={100} once>
+                    <img src="/thundercloud.png" alt="thunder head Logo" className={styles['thunder-cloud-title']} />
+                </LazyLoad>
                 <h1 className={styles['main-title-text']}>HOME SERVICE LEAD GENERATION &amp; MARKETING PROS</h1>
                 <div className={styles['button-section']}>
                     <Link href="/contact">
@@ -22,7 +24,9 @@ const Home = () => {
             </div>
             <article className={styles.articles}>
                 <h2>DO YOU NEED LEADS?</h2>
-                <img src="/leads.jpg" alt="leads" className={styles['inline-image']} />
+                <LazyLoad offset={100} once>
+                    <img src="/leads.jpg" alt="leads" className={styles['inline-image']} />
+                </LazyLoad>
                 <h3>Acquire and Interact Automatically</h3>
                 <h4>Text Message Leads</h4>
                 <p>Instantly receive texts from individuals interested in your business and services. Reply immediately with custom texts or have our systems auto-reply to engage and capture those leads.</p>
