@@ -23,7 +23,8 @@ const Nav = () => {
             toggleMenu(!showing);
         }
     }
-    const slideInClass = () => `${animate['animate__animated']} ${showing ? `${styles['slide-in']} ${animate['animate__fadeInLeft']}` : `${styles['slide-out']} ${animate['animate__fadeOutLeft']}`}`.trim();
+    // const slideInClass = () => `${animate['animate__animated']} ${showing ? `${styles['slide-in']} ${animate['animate__fadeInLeft']}` : `${styles['slide-out']} ${animate['animate__fadeOutLeft']}`}`.trim();
+    const slideInClass = () => '';
 
     return (
         <Fragment>
