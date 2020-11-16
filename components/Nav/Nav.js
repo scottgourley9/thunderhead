@@ -8,6 +8,7 @@ import animate from '../../styles/animate.module.css';
 const Nav = () => {
     const [showing, toggleMenu] = useState(false);
     const [notAtTop, toggleNotAtTop] = useState(false);
+    const [mounted, updateMounted] = useState(false);
     const handleOnScroll = () => {
         if (window.pageYOffset > 0) {
             toggleNotAtTop(true);
@@ -15,6 +16,9 @@ const Nav = () => {
             toggleNotAtTop(false);
         }
     }
+    useEffect(() => {
+        updateMounted(true);
+    }, []);
     useEffect(() => {
         window.onscroll = handleOnScroll;
     }, [notAtTop]);
@@ -35,7 +39,7 @@ const Nav = () => {
                     <span className={styles['logo-title']}>THUNDERHEAD</span>
                     <GiHamburgerMenu className={styles['ham-menu']} onClick={handleToggleMenu} />
                 </div>
-                <ul className={`${styles['nav-list-wrapper']} ${showing ? styles.showing : ''} ${notAtTop ? styles['nav-show-shadow'] : ''}`.trim()}>
+                <ul className={`${styles['nav-list-wrapper']} ${showing ? styles.showing : ''} ${mounted ? styles['display-it'] : ''} ${notAtTop ? styles['nav-show-shadow'] : ''}`.trim()}>
                     <li onClick={handleToggleMenu}>
                         <Link href="/">
                             <a>HOME</a>

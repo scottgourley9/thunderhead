@@ -58,6 +58,9 @@
         }
     }
 }
+.display-it {
+    display: flex;
+}
 .sub-nav {
     display: none;
     position: absolute;
@@ -95,7 +98,6 @@
     width: 36px;
 }
 .showing {
-    display: flex;
     margin-left: 0;
     box-shadow: 0 -8px $space-md $black !important;
 }
