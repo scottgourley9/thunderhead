@@ -20,18 +20,21 @@ const Home = () => {
                 </div>
             </div>
             <article className={styles.articles}>
-                <h2>DO YOU NEED LEADS?</h2>
+                <h2 className={`${styles['section-info-title']} ${styles.mobile}`}>DO YOU NEED LEADS?</h2>
                 <LazyLoad offset={100} once>
                     <img src="/leads.jpg" alt="leads" className={styles['inline-image']} />
                 </LazyLoad>
-                <h3>Acquire and Interact Automatically</h3>
-                <h4>Text Message Leads</h4>
-                <p>Instantly receive texts from individuals interested in your business and services. Reply immediately with custom texts or have our systems auto-reply to engage and capture those leads.</p>
-                <div className={styles['button-section']}>
-                    <Link href="/contact">
-                        <button>Find Out How</button>
-                    </Link>
-                    <div id="seo" />
+                <div className={styles['section-info']}>
+                    <h2 className={`${styles['section-info-title']} ${styles.desktop}`}>DO YOU NEED LEADS?</h2>
+                    <h3>Acquire and Interact Automatically</h3>
+                    <h4>Text Message Leads</h4>
+                    <p>Instantly receive texts from individuals interested in your business and services. Reply immediately with custom texts or have our systems auto-reply to engage and capture those leads.</p>
+                    <div className={styles['button-section']}>
+                        <Link href="/contact">
+                            <button>Find Out How</button>
+                        </Link>
+                        <div id="seo" />
+                    </div>
                 </div>
             </article>
             <article className={styles.articles}>

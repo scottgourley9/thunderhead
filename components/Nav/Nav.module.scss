@@ -6,18 +6,22 @@
     width: 100%;
     top: 0;
     left: 0;
+    z-index: 1;
 }
 .nav-list-wrapper {
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: flex-end;
     width: 100%;
-    padding: 0;
     position: relative;
-    transition: margin 0.5s;
+    transition: all 0.5s;
     margin: 0;
     box-shadow: none;
-    padding: $space-sm;
+    padding: $space-xs $space-lg;
+    height: 70px;
+    li {
+        margin-left: $space-lg;
+    }
     @media (max-width: $small-device) {
         display: none;
         height: 500px;
@@ -32,9 +36,11 @@
         z-index: 1;
         justify-content: flex-start;
         padding: $space-sm 0 0 $space-lg;
+        transition: margin 0.5s;
         li {
             color: $white;
             margin-top: 22px;
+            margin-left: 0;
             a {
                 font-size: 14px;
                 font-weight: bold;
@@ -126,7 +132,7 @@
 }
 .nav-overlay-showing {
     opacity: 0.75;
-    z-index: 0;
+    z-index: 1;
 }
 .logo-and-ham {
     display: none;
@@ -146,8 +152,10 @@
 }
 .nav-show-shadow {
     box-shadow: 0 -8px $space-md $black;
+    background: $white;
     @media (max-width: $small-device) {
         box-shadow: none;
+        background: linear-gradient(93deg,$blue-dark 0%,$blue 50%,$blue-light 100%);
     }
 }
 .logo-title {
@@ -157,4 +165,27 @@
     text-align: center;
     letter-spacing: 1px;
     font-weight: bold;
+}
+.thunder-head-logo {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    position: absolute;
+    left: 0;
+    top: 0;
+    margin: 0 !important;
+    padding: $space-xs $space-lg;
+    img {
+        width: 60px;
+    }
+    @media (max-width: $small-device) {
+        display: none;
+    }
+    .thunder-head-title {
+        font-size: 16px;
+        color: $blue;
+        letter-spacing: 1px;
+        font-weight: bold;
+        margin-left: $space-xs;
+    }
 }

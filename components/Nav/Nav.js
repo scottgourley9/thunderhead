@@ -1,5 +1,6 @@
 import { Fragment, useState, useEffect } from 'react';
 import Link from 'next/link'
+import LazyLoad from 'react-lazyload';
 import { GiHamburgerMenu } from 'react-icons/gi';
 
 import styles from './Nav.module.scss';
@@ -40,6 +41,12 @@ const Nav = () => {
                     <GiHamburgerMenu className={styles['ham-menu']} onClick={handleToggleMenu} />
                 </div>
                 <ul className={`${styles['nav-list-wrapper']} ${showing ? styles.showing : ''} ${mounted ? styles['display-it'] : ''} ${notAtTop ? styles['nav-show-shadow'] : ''}`.trim()}>
+                    <li className={styles['thunder-head-logo']}>
+                        <LazyLoad offset={100} once>
+                            <img src="/thundercloud.png" alt="leads" className={styles['inline-image']} />
+                        </LazyLoad>
+                        <span className={styles['thunder-head-title']}>THUNDERHEAD</span>
+                    </li>
                     <li onClick={handleToggleMenu}>
                         <Link href="/">
                             <a>HOME</a>
