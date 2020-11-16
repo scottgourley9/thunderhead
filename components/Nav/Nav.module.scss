@@ -19,6 +19,7 @@
     box-shadow: none;
     padding: $space-sm;
     @media (max-width: $small-device) {
+        display: none;
         height: 500px;
         margin-left: -100%;
         overflow: hidden;
@@ -94,6 +95,7 @@
     width: 36px;
 }
 .showing {
+    display: flex;
     margin-left: 0;
     box-shadow: 0 -8px $space-md $black !important;
 }

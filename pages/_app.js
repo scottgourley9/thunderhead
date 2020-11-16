@@ -12,7 +12,9 @@ const MyApp = ({ Component, pageProps }) => {
         <Fragment>
             <Head>
                 <title>Thunder Head</title>
-                <link rel="icon" href="/favicon.ico" />
+                <link rel="icon" href="/thunder.ico" />
+                <meta name="description" content="Help Businesses to grow by providing software and services that will help to generate leads, get better reviews, get better rankings, market their business, create text campaigns, implement SEO, design websites, and provide automated customer interactive software" />
+                <meta name="keywords" content="Lead Generation, Better Reviews, Better Rankings, Marketing, Text Campaign, Search Engine Optimization, SEO, Web Design, Automated Customer Interactive Software" />
             </Head>
             <Nav />
             <Layout>
