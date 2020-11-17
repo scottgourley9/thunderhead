@@ -161,7 +161,7 @@ const Home = () => {
                     <LazyLoad offset={100} once>
                         <img src="/insight.jpg" alt="insight" className={styles['inline-image']} />
                     </LazyLoad>
-                    <div className={`${styles['section-info']} ${styles['section-info-right']}`}>
+                    <div className={`${styles['section-info']} ${styles['section-info-left']}`}>
                         <h2 className={`${styles['section-info-title']} ${styles.desktop}`}>Automated Customer Interaction Software</h2>
                         <h3>Automatically understand your client’s experience</h3>
                         <ul>
@@ -201,7 +201,7 @@ const Home = () => {
                     <LazyLoad offset={100} once>
                         <img src="/growth.jpg" alt="feedback" className={styles['inline-image']} />
                     </LazyLoad>
-                    <div className={`${styles['section-info']} ${styles['section-info-right']}`}>
+                    <div className={`${styles['section-info']} ${styles['section-info-left']}`}>
                         <h2 className={`${styles['section-info-title']} ${styles.desktop}`}>Acquire. Interact. Retain.
                         <br />
                         All on Autopilot.</h2>
