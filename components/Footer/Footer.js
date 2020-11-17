@@ -25,7 +25,9 @@ const Footer = () => {
                 <li><a href="#" target="_blank" rel="noopener noreferrer"><FaInstagram className={styles.icon} /></a></li>
                 <li><a href="#" target="_blank" rel="noopener noreferrer"><FaLinkedin className={styles.icon} /></a></li>
             </ul>
-            <p className={styles.copyright}>© Copyright <span id="year">2020</span>, Thunderhead. All Rights Reserved.</p>
+            <p className={styles.copyright}>
+                © Copyright <span id="year">2020</span>, Thunderhead. All Rights Reserved.
+            </p>
     	</footer>
     )
 }
