@@ -74,10 +74,6 @@
     justify-content: center;
     margin: $space-md 0;
 }
-.inline-image {
-    width: calc(100% + 32px);
-    margin: 0 -16px;
-}
 .be-icon {
     color: $blue;
     font-size: 130px;
@@ -97,8 +93,15 @@
     border-radius: 15px;
     box-shadow: -$space-xs $space-xs $space-xs $grey-border;
     border: 1px solid $grey-border;
-    padding: $space-sm;
+    padding: $space-md $space-sm;
     margin: $space-md 0;
+    width: 100%;
+}
+.be-card-short {
+    width: 30%;
+    @media (max-width: $small-device) {
+        width: 100%;
+    }
 }
 .mobile {
     display: none;
@@ -113,21 +116,49 @@
     }
 }
 .section-info {
-    position: absolute;
-    top: 7%;
-    left: 0;
     width: 50%;
-    max-width: 700px;
-    padding: $space-md;
-    box-shadow: -$space-xs $space-xs $space-xs $blue-dark;
-    background: $white;
-    border-radius: $space-xs;
-    border: 1px solid $grey-border;
     @media (max-width: $small-device) {
-        position: inherit;
-        top: inherit;
-        left: inherit;
-        width: inherit;
-        max-width: 100%;
+        width: 100%;
     }
+}
+.inline-image {
+    width: 100%;
+    @media (max-width: $small-device) {
+        width: calc(100% + 32px);
+        margin: 0 -16px;
+    }
+}
+.be-cards {
+    display: flex;
+    justify-content: space-around;
+    @media (max-width: $small-device) {
+        flex-direction: column;
+    }
+}
+.img-and-info {
+    display: flex;
+    position: relative;
+    width: 100%;
+    margin: $space-xxlg 0;
+    @media (max-width: $small-device) {
+        display: inherit;
+        margin: 0;
+    }
+    div:first-child {
+        width: 50%;
+        @media (max-width: $small-device) {
+            width: 100%;
+        }
+    }
+}
+.section-info-left {
+    // left: 0;
+}
+.section-info-right {
+    // right: 0;
+}
+.img-and-info-left {
+    flex-direction: row-reverse;
+}
+.img-and-info-right {
 }

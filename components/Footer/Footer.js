@@ -7,17 +7,19 @@ import styles from './Footer.module.scss';
 const Footer = () => {
     return (
         <footer className={styles.footer}>
-			<h2>Got Questions?</h2>
-            <ul>
-                <li>
-                    <p className={styles['contact-us']}>Call Us</p>
-                    <a href="tel:8012100263">801-867-5309</a>
-                </li>
-                <li>
-                    <p className={styles['contact-us']}>Email Us</p>
-                    <a href="mailto:info@thunderhead.com">info@thunderhead.com</a>
-                </li>
-            </ul>
+            <div className={styles.questions}>
+    			<h2>Got Questions?</h2>
+                <ul>
+                    <li>
+                        <p className={styles['contact-us']}>Call Us</p>
+                        <a href="tel:8012100263">801-867-5309</a>
+                    </li>
+                    <li>
+                        <p className={styles['contact-us']}>Email Us</p>
+                        <a href="mailto:info@thunderhead.com">info@thunderhead.com</a>
+                    </li>
+                </ul>
+            </div>
             <ul className={styles.icons}>
                 <li><a href="#" target="_blank" rel="noopener noreferrer"><FaFacebookSquare className={styles.icon} /></a></li>
                 <li><a href="#" target="_blank" rel="noopener noreferrer"><FaInstagram className={styles.icon} /></a></li>
