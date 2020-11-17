@@ -8,12 +8,15 @@
     margin-bottom: $space-lg;
     input {
         width: 100%;
-        max-width: 300px;
+        max-width: 600px;
         height: 50px;
         padding: 0 $space-sm;
         border: 1px solid $grey-border;
         border-radius: 4px;
         font-size: 16px;
+        @media (max-width: $small-device) {
+            max-width: 100%;
+        }
     }
     .submit-button {
         min-width: 220px;

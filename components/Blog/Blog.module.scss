@@ -3,11 +3,14 @@
 .blog-wrapper {
     width: 100%;
     display: flex;
-    align-items: flex-start;
+    align-items: center;
     justify-content: center;
     flex-direction: column;
     a {
         color: $blue;
-        text-decoration: underline; 
+        text-decoration: underline;
+    }
+    @media (max-width: $small-device) {
+        align-items: flex-start;
     }
 }

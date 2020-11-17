@@ -7,8 +7,11 @@ const Contact = () => {
     return (
         <section className={styles['contact-wrapper']}>
             <h1>Contact Us</h1>
-            <Form />
-            <ContactDetails />
+            <div className={styles['form-section']}>
+                <Form />
+                <ContactDetails />
+            </div>
+
         </section>
     )
 }

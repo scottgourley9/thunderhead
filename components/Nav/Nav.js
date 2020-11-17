@@ -54,7 +54,7 @@ const Nav = () => {
                     </li>
                     <li onClick={handleToggleMenu} className={styles['nav-services']}>
                         <Link href="/">
-                            <a>SERVICES</a>
+                            <a className={styles.services}>SERVICES</a>
                         </Link>
                         <ul className={styles['sub-nav']}>
                         	<li onClick={handleToggleMenu}>

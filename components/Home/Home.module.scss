@@ -32,7 +32,7 @@
 }
 .main-title {
     width: calc(100% + 80px);
-    margin: -64px -40px 0;
+    margin: -88px -40px 0;
     height: 800px;
     background-image: url('../../public/whiteBackground.jpg');
     background-repeat: no-repeat;
@@ -45,7 +45,9 @@
     justify-content: center;
     padding: 0 $space-sm;
     @media (max-width: $small-device) {
+        margin: -64px -16px 0;
         height: 400px;
+        width: calc(100% + 32px);
     }
 }
 .main-title-text {
@@ -127,8 +129,8 @@
 .inline-image {
     width: 100%;
     @media (max-width: $small-device) {
-        width: calc(100% + 80px);
-        margin: 0 -40px;
+        width: 100%;
+        margin: 0;
     }
 }
 .be-cards {
